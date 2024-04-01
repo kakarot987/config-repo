@@ -1,6 +1,15 @@
 server:
   port: 8761
 
+
+spring:
+  security:
+    user:
+      name: root
+      password: s3cr3t
+  activate:
+    on-profile: native
+
 eureka:
   instance:
     hostname: localhost
@@ -15,5 +24,4 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 0
     response-cache-update-interval-ms: 5000
-  activate:
-    on-profile: native
+
