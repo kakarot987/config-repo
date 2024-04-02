@@ -1,14 +1,6 @@
 server:
   port: 8761
 
-spring:
-  security:
-    user:
-      name: root
-      password: s3cr3t
-  activate:
-    on-profile: native
-
 eureka:
   instance:
     hostname: localhost
