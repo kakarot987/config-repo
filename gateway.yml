@@ -1,5 +1,5 @@
 server:
-  port: 8444
+  port: 8443
 
 #server.ssl:
 #  key-store-type: PKCS12
