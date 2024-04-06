@@ -1,6 +1,13 @@
 server:
   port: 8761
 
+app:
+  eureka-username: root
+  eureka-password: root
+  eureka-server: localhost
+  auth-server: localhost
+
+
 eureka:
   instance:
     hostname: localhost
