@@ -45,8 +45,10 @@ spring.rabbitmq.host: rabbitmq
 spring.cloud.stream.kafka.binder.brokers: kafka
 
 app:
-  eureka-server: eureka
-  auth-server: auth-server
+  eureka-username: root
+  eureka-password: root
+  eureka-server: localhost
+  auth-server: localhost
 
 ---
 spring.config.activate.on-profile: kafka
