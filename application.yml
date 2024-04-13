@@ -47,8 +47,8 @@ spring.cloud.stream.kafka.binder.brokers: kafka
 app:
   eureka-username: root
   eureka-password: root
-  eureka-server: localhost
-  auth-server: localhost
+  eureka-server: eureka
+  auth-server: auth-server
 
 ---
 spring.config.activate.on-profile: kafka
