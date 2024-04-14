@@ -1,6 +1,14 @@
 spring:
   profiles:
     active: native
+---
+spring.config.activate.on-profile: native
+
+app:
+  eureka-username: root
+  eureka-password: root
+  eureka-server: localhost
+  auth-server: localhost
 
 eureka:
   client:
@@ -25,16 +33,6 @@ spring.cloud.stream.kafka.binder:
   defaultBrokerPort: 9092
 
 spring.cloud.stream.defaultBinder: rabbit
-
----
-spring.config.activate.on-profile: native
-
-app:
-  eureka-username: root
-  eureka-password: root
-  eureka-server: localhost
-  auth-server: localhost
-
 # WARNING: Exposing all management endpoints over http should only be used during development, must be locked down in production!
 management.endpoint.health.show-details: "ALWAYS"
 management.endpoints.web.exposure.include: "*"
