@@ -1,21 +1,8 @@
-spring:
-  application:
-    name: config-server
-  profiles:
-    active: native
-
----
-
-spring:
-  config:
-    activate:
-      on-profile: native
-
 app:
   eureka-username: root
   eureka-password: root
-  eureka-server: eureka
-  auth-server: auth-server
+  eureka-server: localhost
+  auth-server: localhost
 
 eureka:
   client:
@@ -51,18 +38,11 @@ management.tracing.sampling.probability: 1.0
 logging.pattern.level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
 
 ---
+spring.config.activate.on-profile: docker
 
-spring:
-  config:
-    activate:
-      on-profile: docker
-  rabbitmq:
-    host: rabbitmq
-  cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: kafka
+spring.rabbitmq.host: rabbitmq
+
+spring.cloud.stream.kafka.binder.brokers: kafka
 
 app:
   eureka-username: root
