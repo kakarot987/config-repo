@@ -1,7 +1,7 @@
 app:
   eureka-username: root
   eureka-password: root
-  eureka-server: localhost
+  eureka-server: eureka
   auth-server: localhost
 
 eureka:
