@@ -6,7 +6,7 @@ app:
 
 eureka:
   instance:
-    hostname: eureka
+    hostname: eureka-server
     leaseRenewalIntervalInSeconds: 5
     leaseExpirationDurationInSeconds: 5
   client:
