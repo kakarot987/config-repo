@@ -1,7 +1,7 @@
 app:
   eureka-username: root
   eureka-password: root
-  eureka-server: eureka
+  eureka-server: eureka-server
   auth-server: localhost
 
 eureka:
@@ -49,7 +49,7 @@ spring.cloud.stream.kafka.binder.brokers: kafka
 app:
   eureka-username: root
   eureka-password: root
-  eureka-server: eureka
+  eureka-server: eureka-server
   auth-server: auth-server
 
 ---
