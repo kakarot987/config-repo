@@ -1,3 +1,9 @@
+app:
+  eureka-username: root
+  eureka-password: root
+  eureka-server: eureka
+  auth-server: auth-server
+
 eureka:
   instance:
     hostname: eureka-server
@@ -39,6 +45,12 @@ spring.config.activate.on-profile: docker
 spring.rabbitmq.host: rabbitmq
 
 spring.cloud.stream.kafka.binder.brokers: kafka
+
+app:
+  eureka-username: root
+  eureka-password: root
+  eureka-server: eureka
+  auth-server: auth-server
 
 ---
 spring.config.activate.on-profile: kafka
