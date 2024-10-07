@@ -34,7 +34,7 @@ logging:
     org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
 
 ---
-spring.config.activate.on-profile: docker
+spring.config.activate.on-profile: native
 
 server.port: 8080
 
