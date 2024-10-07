@@ -27,6 +27,8 @@ spring.cloud.stream.rabbit.bindings.messageProcessor-in-0.consumer:
 spring.cloud.stream.kafka.bindings.messageProcessor-in-0.consumer:
   enableDlq: true
 
+spring.cloud.stream.default-binder: kafka
+
 logging:
   level:
     root: INFO
